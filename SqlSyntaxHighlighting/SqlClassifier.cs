@@ -17,37 +17,37 @@ namespace SqlSyntaxHighlighting
 		private readonly char[] functionPostfixCharacters = new[] { '\t', '(' };
 
 		private readonly List<string> keywords = new List<string> {
-		    "select", "insert", "delete", "update",
-			"into", "values", "truncate", "distinct", "top", "with",
-		    "from", "join", "inner join", "outer join", "left outer join", "right outer join", "left join", "right join", "cross join",
-			"union", "except",
-		    "where", "like", "between", "having", "exists",
-		    "order by", "asc", "desc", "over", "group by", 
-		    "on", "in", "is", "not", "as", "and", "or", "all",
-			"create", "alter", "drop",
-			"table", "function", "procedure", "view", "schema",
-			"declare", "set",
-			"if", "begin", "then", "else", "end", "for", "while", "null",
-			"transaction", "commit", "rollback",
-			"exec", "return", "returns", "print", "use",
-			
-			"bigint", "numeric", "bit", "smallint", "decimal", "smallmoney", "int", "tinyint", "money", "float", "real",
-			"date", "datetimeoffset", "datetime2", "smalldatetime", "datetime", "time", "timestamp",
-			"char", "varchar", "text", "nchar", "nvarchar", "ntext", 
-			"binary", "varbinary", "image", 
-			"cursor", "hierarchyid", "uniqueidentifier", "sql_variant", "xml"
+			"SELECT", "INSERT", "DELETE", "UPDATE",
+			"INTO", "VALUES", "TRUNCATE", "DISTINCT", "TOP", "WITH",
+			"FROM", "JOIN", "INNER JOIN", "OUTER JOIN", "LEFT OUTER JOIN", "RIGHT OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN", "USING",
+			"UNION", "EXCEPT",
+			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS",
+			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY",
+			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
+			"CREATE", "ALTER", "DROP",
+			"TABLE", "FUNCTION", "PROCEDURE", "VIEW", "SCHEMA",
+			"DECLARE", "SET",
+			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL",
+			"TRANSACTION", "COMMIT", "ROLLBACK",
+			"EXEC", "RETURN", "RETURNS", "PRINT", "USE",
+
+			"BIGINT", "NUMERIC", "BIT", "SMALLINT", "DECIMAL", "SMALLMONEY", "INT", "TINYINT", "MONEY", "FLOAT", "REAL",
+			"DATE", "DATETIMEOFFSET", "DATETIME2", "SMALLDATETIME", "DATETIME", "TIME", "TIMESTAMP",
+			"CHAR", "VARCHAR", "TEXT", "NCHAR", "NVARCHAR", "NTEXT",
+			"BINARY", "VARBINARY", "IMAGE",
+			"CURSOR", "HIERARCHYID", "UNIQUEIDENTIFIER", "SQL_VARIANT", "XML"
 		};
 
 		private readonly List<string> functions = new List<string> {
-		    "count", "count_big", "sum", "min", "max", "avg",
-			"abs", "newid", "rand", "isnull", "coalesce",
-			"left", "right", "substring", "ltrim", "rtrim", "upper", "lower", "charindex", "len", "stuff",
-			"getdate", "dateadd", "datediff", "datepart", "datename",
-			"convert", "cast",
-			"row_number"
+			"COUNT", "COUNT_BIG", "SUM", "MIN", "MAX", "AVG",
+			"ABS", "NEWID", "RAND", "ISNULL", "COALESCE",
+			"LEFT", "RIGHT", "SUBSTRING", "LTRIM", "RTRIM", "UPPER", "LOWER", "CHARINDEX", "LEN", "STUFF",
+			"GETDATE", "DATEADD", "DATEDIFF", "DATEPART", "DATENAME",
+			"CONVERT", "CAST",
+			"ROW_NUMBER"
 		};
 
-		private readonly Regex variables = new Regex(@"(?:^|[""\s(+,=])(?<Variable>@[a-z0-9_]+)(?:$|[""\s)+,])", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+		private readonly Regex variables = new Regex(@"(?:^|[""\s(+,=])(?<Variable>@[a-z0-9_]+)(?:$|[""\s)+,])", RegexOptions.Multiline);
 
 
 		private readonly IClassificationType keywordType;
@@ -72,7 +72,7 @@ namespace SqlSyntaxHighlighting
 			{
 				SnapshotSpan snapshot = tagSpan.Span.GetSpans(span.Snapshot).First();
 
-				string text = snapshot.GetText().ToLowerInvariant();
+				string text = snapshot.GetText();
 				int index = -1;
 
 				// keywords
