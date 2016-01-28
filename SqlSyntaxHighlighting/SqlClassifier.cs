@@ -21,7 +21,7 @@ namespace SqlSyntaxHighlighting
 			"INTO", "VALUES", "TRUNCATE", "DISTINCT", "TOP", "WITH",
 			"FROM", "JOIN", "INNER JOIN", "OUTER JOIN", "LEFT OUTER JOIN", "RIGHT OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN", "USING",
 			"UNION", "EXCEPT",
-			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS",
+			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS", "RETURNING",
 			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY",
 			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
 			"CREATE", "ALTER", "DROP",
@@ -47,7 +47,7 @@ namespace SqlSyntaxHighlighting
 			"ROW_NUMBER"
 		};
 
-		private readonly Regex variables = new Regex(@"(?:^|[""\s(+,=])(?<Variable>@[a-z0-9_]+)(?:$|[""\s)+,])", RegexOptions.Multiline);
+		private readonly Regex variables = new Regex(@"(?:^|[""\s(+,=])(?<Variable>[@\:][a-zA-Z0-9_]+)(?:$|[""\s)+,])", RegexOptions.Multiline);
 
 
 		private readonly IClassificationType keywordType;
