@@ -12,7 +12,7 @@ namespace SqlSyntaxHighlighting
 	class SqlClassifier : IClassifier
 	{
 		private readonly char[] keywordPrefixCharacters = new[] { '\t', ' ', '"', '(' };
-		private readonly char[] keywordPostfixCharacters = new[] { '\t', ' ', '"', ')' };
+		private readonly char[] keywordPostfixCharacters = new[] { '\t', ' ', '"', '(', ')' };
 		private readonly char[] functionPrefixCharacters = new[] { '\t', ' ', '"', ',', '(' };
 		private readonly char[] functionPostfixCharacters = new[] { '\t', '(' };
 
@@ -22,7 +22,7 @@ namespace SqlSyntaxHighlighting
 			"FROM", "JOIN", "INNER JOIN", "OUTER JOIN", "LEFT OUTER JOIN", "RIGHT OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN",
 			"UNION", "EXCEPT",
 			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS",
-			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY",
+			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY", "LIMIT",
 			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
 			"CREATE", "ALTER", "DROP",
 			"TABLE", "FUNCTION", "PROCEDURE", "VIEW", "SCHEMA",
@@ -30,6 +30,7 @@ namespace SqlSyntaxHighlighting
 			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL",
 			"TRANSACTION", "COMMIT", "ROLLBACK",
 			"EXEC", "RETURN", "RETURNS", "PRINT", "USE", "USING", "RETURNING",
+			"COPY", "STDIN", "STDOUT",
 
 			"BIGINT", "NUMERIC", "BIT", "SMALLINT", "DECIMAL", "SMALLMONEY", "INT", "TINYINT", "MONEY", "FLOAT", "REAL",
 			"DATE", "DATETIMEOFFSET", "DATETIME2", "SMALLDATETIME", "DATETIME", "TIME", "TIMESTAMP",
