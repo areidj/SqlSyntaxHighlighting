@@ -22,7 +22,7 @@ namespace SqlSyntaxHighlighting
 			"FROM", "JOIN", "INNER JOIN", "OUTER JOIN", "LEFT OUTER JOIN", "RIGHT OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN",
 			"UNION", "EXCEPT",
 			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS",
-			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY", "LIMIT",
+			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY", "LIMIT", "OFFSET",
 			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
 			"CREATE", "ALTER", "DROP",
 			"TABLE", "FUNCTION", "PROCEDURE", "VIEW", "SCHEMA",
