@@ -25,6 +25,7 @@ namespace SqlSyntaxHighlighting
 			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY", "LIMIT", "OFFSET",
 			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
 			"CREATE", "ALTER", "DROP",
+			"TEMP", "TEMPORARY",
 			"TABLE", "FUNCTION", "PROCEDURE", "VIEW", "SCHEMA",
 			"DECLARE", "SET", "READ ONLY",
 			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL",
