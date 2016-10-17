@@ -6,4 +6,4 @@ Can set the color of Functions, Keywords, and Variables.
 
 # Contributions
 
-Happy to accept pull requests for new highlight tokens, or any other additions/changes you might be interested in seeing.
+Happy to accept pull requests for new highlight tokens, or any other additions/changes you might be interested in seeing. Make sure to bump the version number too please :)
