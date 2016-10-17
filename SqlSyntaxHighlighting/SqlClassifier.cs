@@ -18,6 +18,7 @@ namespace SqlSyntaxHighlighting
 
 		private readonly List<string> keywords = new List<string> {
 			"SELECT", "INSERT", "DELETE", "UPDATE",
+			"ONLY",
 			"INTO", "VALUES", "TRUNCATE", "DISTINCT", "TOP", "WITH",
 			"FROM", "JOIN", "INNER JOIN", "OUTER JOIN", "LEFT OUTER JOIN", "RIGHT OUTER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN",
 			"UNION", "EXCEPT",
