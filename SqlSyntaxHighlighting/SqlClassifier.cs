@@ -12,7 +12,7 @@ namespace SqlSyntaxHighlighting
 	class SqlClassifier : IClassifier
 	{
 		private readonly char[] keywordPrefixCharacters = new[] { '\t', ' ', '"', '(' };
-		private readonly char[] keywordPostfixCharacters = new[] { '\t', ' ', '"', '(', ')' };
+		private readonly char[] keywordPostfixCharacters = new[] { '\t', ' ', '"', '(', ')', ';' };
 		private readonly char[] functionPrefixCharacters = new[] { '\t', ' ', '"', ',', '(' };
 		private readonly char[] functionPostfixCharacters = new[] { '\t', '(' };
 
