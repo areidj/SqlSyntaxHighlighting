@@ -1,6 +1,6 @@
 # SqlSyntaxHighlighting
 
-Configurable SQL syntax highlighting for Visual Studio 2008-2015.
+Configurable SQL syntax highlighting for Visual Studio 2010-2015.
 
 Can set the color of Functions, Keywords, and Variables in the built in Fonts & Colors menu option (SQL Syntax Highlighting - Function/Keyword/Variable)
 
