@@ -30,7 +30,7 @@ namespace SqlSyntaxHighlighting
 			"TEMP", "TEMPORARY",
 			"TABLE", "FUNCTION", "PROCEDURE", "VIEW", "SCHEMA",
 			"DECLARE", "SET", "READ ONLY",
-			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL",
+			"IF", "BEGIN", "THEN", "ELSE", "END", "FOR", "WHILE", "NULL", "CASE", "WHEN",
 			"TRANSACTION", "COMMIT", "ROLLBACK",
 			"EXEC", "RETURN", "RETURNS", "PRINT", "USE", "USING", "RETURNING",
 			"COPY", "STDIN", "STDOUT",
