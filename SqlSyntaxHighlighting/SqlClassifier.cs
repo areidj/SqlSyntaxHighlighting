@@ -48,7 +48,7 @@ namespace SqlSyntaxHighlighting
 			"LEFT", "RIGHT", "SUBSTRING", "LTRIM", "RTRIM", "UPPER", "LOWER", "CHARINDEX", "LEN", "STUFF",
 			"GETDATE", "DATEADD", "DATEDIFF", "DATEPART", "DATENAME",
 			"CONVERT", "CAST",
-			"ROW_NUMBER"
+			"ROW_NUMBER", "NULLIF"
 		};
 
 		private readonly Regex variables = new Regex(@"(?:^|[""\s(+,=])(?<Variable>[@\:][a-zA-Z0-9_]+)(?:$|[""\s)+,])", RegexOptions.Multiline);
