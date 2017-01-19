@@ -24,7 +24,7 @@ namespace SqlSyntaxHighlighting
 			"UNION", "EXCEPT",
 			"WHERE", "LIKE", "BETWEEN", "HAVING", "EXISTS",
 			"ORDER BY", "ASC", "DESC", "OVER", "GROUP BY", "LIMIT", "OFFSET",
-			"PARTITION BY", "WINDOW"
+			"PARTITION BY", "WINDOW",
 			"ON", "IN", "IS", "NOT", "AS", "AND", "OR", "ALL", "ANY",
 			"CREATE", "ALTER", "DROP",
 			"TEMP", "TEMPORARY",
