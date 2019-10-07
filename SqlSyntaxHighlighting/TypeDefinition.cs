@@ -21,7 +21,7 @@ namespace SqlSyntaxHighlighting
 		{
 			public SqlKeywordFormat()
 			{
-				this.ForegroundColor = Colors.Blue;
+				this.ForegroundColor = Colors.BlueViolet;
 			}
 		}
 
